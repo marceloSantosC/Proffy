@@ -1,0 +1,107 @@
+.teacher-item {
+    background: var(--color-box-base);
+    border: 2px solid var(--color-line-in-white);
+    border-radius: 1.2rem;
+    margin-top: 2.4rem;
+    overflow: hidden;
+}
+
+.teacher-item header {
+    padding: 3.2rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.teacher-item header img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.teacher-item header div {
+    margin-left: 2.4rem;
+}
+
+
+.teacher-item header div strong {
+    font: 700 3rem Archivo;
+    display: block;
+    color: var(--color-text-tittle);
+}
+
+.teacher-item header div span {
+    font-size: 2rem;
+    display: block;
+    margin-top: 0.6rem;
+}
+
+.teacher-item p {
+    font-size: 2rem;
+    text-align: justify;
+}
+
+
+.teacher-item > p {
+    padding: 0 2rem;
+    line-height: 3rem;
+}
+
+.teacher-item footer {
+    padding: 3.2rem 2rem;
+    background-color: var(--color-box-footer);
+    border-top: 1px solid var(--color-line-in-white);
+    margin-top: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.teacher-item p strong {
+    color: var(--color-primary);
+    font-size: 2.2rem;
+    display: block;
+}
+
+.teacher-item button {
+    width: 20rem;
+    height: 5.6rem;
+    background: var(--color-secundary);
+    color: var(--color-button-text);
+    border: 0;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font: 700 1.4rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.2;
+}
+
+.teacher-item button:hover {
+    background: var(--color-secundary-dark);
+}
+
+@media (min-width: 700px) {
+    .teacher-item header, .teacher-item footer {
+        padding: 3.2rem;
+    }
+
+    .teacher-item > p {
+        padding: 0 3.2rem;
+    }
+
+    .teacher-item footer p strong {
+        display: initial;
+        margin-left: 1rem;
+    }
+
+    .teacher-item footer button {
+        width: 245px;
+        font-size: 1.6rem;
+        justify-content: center;
+    }
+
+    .teacher-item footer button img {
+        margin-right: 1.6rem;
+    }
+}
