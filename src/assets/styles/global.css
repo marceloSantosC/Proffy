@@ -30,7 +30,7 @@
 }
 
 html, body, #root {
-    height: 100vh;
+    max-width: 100vw;
 }
 
 body {
@@ -39,11 +39,10 @@ body {
 
 #root {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
-body, input, button, textarea {
+body, input, button, textarea, select {
     font: 500 1.6rem Poppins;
     color: var(--color-text-base);
 }

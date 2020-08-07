@@ -62,7 +62,7 @@
     display: block;
 }
 
-.teacher-item button {
+.teacher-item a {
     width: 20rem;
     height: 5.6rem;
     background: var(--color-secundary);
@@ -75,9 +75,10 @@
     align-items: center;
     justify-content: space-evenly;
     transition: 0.2;
+    text-decoration: none;
 }
 
-.teacher-item button:hover {
+.teacher-item a:hover {
     background: var(--color-secundary-dark);
 }
 

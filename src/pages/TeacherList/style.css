@@ -14,47 +14,31 @@
     color: var(--color-text-in-primary);
 }
 
-#search-teachers .input-block {
-    position: relative;
-}
-
-#search-teachers .input-block label {
-    font-size: 2rem;
-}
-
-#search-teachers .input-block + .input-block {
-    margin-top: 1.4rem;
-}
-
-#search-teachers .input-block input {
-    width: 100%;
-    height: 5.6rem;
-    margin-top: 0.4rem;
-    border-radius: 1.2rem;
-    background: var(--color-input-background);
-    border: solid 1px var(--color-line-in-white);
-    outline: 0;
-    padding: 0 2rem;
-    font: 2rem Archivo;
-}
-
-#search-teachers .input-block:focus-within::after {
-    width: calc(100% - 3.2rem);
-    height: 2px;
-    content: "";
-    background: var(--color-primary-light);
-    position: absolute;
-    left: 1.6rem;
-    right: 1.6rem;
-    bottom: 0;
-}
-
 #page-teacher-list main {
     margin: 3.2rem auto;
     width: 90%;
 }
 
+#search-teachers button {
+    outline: 0;
+    width: 100%;
+    height: 4.2rem;
+    background: var(--color-secundary);
+    color: var(--color-button-text);
+    border: 0;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font: 700 1.6rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+    margin-top: 3.2rem;
+}
 
+#search-teachers button:hover{
+    background: var(--color-secundary-dark);
+}
 
 /* Estilo do desktop */
 @media(min-width: 700px) {
@@ -64,14 +48,15 @@
 
     #search-teachers {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         column-gap: 16px;
         position: absolute;
         bottom: -28px;
     }
 
-    #search-teachers .input-block + .input-block {
-        margin: 0;
+    #search-teachers .input-block + .input-block,
+    #search-teachers .select-block + .select-block {
+        margin-top: 0;
     }
 
     #page-teacher-list main {
